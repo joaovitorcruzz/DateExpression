@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Data</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <h1>Informe duas datas distintas</h1>
+    <div style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      ">
+        <div style="display: flex; align-items: center; justify-content: center">
+            <form id="dataForm" class="formulario">
+                <div class="databox">
+                    <label for="data1">DATA 1:</label>
+                    <input type="datetime-local" id="data1" name="data1" class="databox" />
+                </div>
+
+                <div class="databox">
+                    <label for="data2">DATA 2:</label>
+                    <input type="datetime-local" id="data2" name="data2" class="databox" />
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+        <div id="resultado" class="result"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
